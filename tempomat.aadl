@@ -1,0 +1,229 @@
+package tempomat
+public
+	with Data_Model,sei;
+
+	data Speed
+		properties
+			Data_Model::Data_Representation => Integer;
+	end Speed;
+
+	data implementation Speed.kph
+	end Speed.kph;
+
+	data Distance
+		properties
+			Data_Model::Data_Representation => Integer;
+	end Distance;
+
+	data implementation Distance.meters
+	end Distance.meters;
+
+	system CruiseControlSystem
+	end CruiseControlSystem;
+
+	system implementation CruiseControlSystem.impl
+		subcomponents
+			DistanceSensor: device DistanceSensor;
+			SpeedSensor: device SpeedSensor;
+			Interface: device Interface;
+			GasPedal: device GasPedal;
+			BrakePedal: device BrakePedal;
+			Controller: process Controller.impl;
+			HWConnection: bus HWConnection.impl;
+			MainProcessor: processor MainProcessor.impl;
+			RAM: memory RAM.impl;
+		connections
+			distance_sensor_connection: port DistanceSensor.front_distance -> Controller.front_distance;
+			speed_sensor_connection: port SpeedSensor.current_speed -> Controller.current_speed;
+			interface_connection: port Interface.set_speed -> Controller.set_speed;
+			gas_connection: port Controller.press_gas -> GasPedal.activate_gas;
+			brake_connection: port Controller.press_brake -> BrakePedal.activate_break;
+
+			bus_distance_sensor: bus access HWConnection -> DistanceSensor.bus_access;
+			bus_speed_sensor: bus access HWConnection -> SpeedSensor.bus_access;
+			bus_interface: bus access HWConnection -> Interface.bus_access;
+			bus_gas: bus access HWConnection -> GasPedal.bus_access;
+			bus_brake: bus access HWConnection -> BrakePedal.bus_access;
+			bus_memory: bus access HWConnection -> RAM.bus_access;
+			bus_processor: bus access HWConnection -> MainProcessor.bus_access;
+	end CruiseControlSystem.impl;
+
+-- Process
+	process Controller
+		features
+			front_distance: in data port Distance.meters;
+			current_speed: in data port Speed.kph;
+			set_speed: in data port Speed.kph;
+			press_gas: out event port;
+			press_brake: out event port;
+		properties
+			SEI::MIPSBudget => 100.0 mips;
+	end Controller;
+
+	process implementation Controller.impl
+		subcomponents
+			thread_distance: thread ReadDistance.impl;
+			thread_current_speed: thread ReadCurrentSpeed.impl;
+			thread_set_speed: thread ReadSetSpeed.impl;
+			thread_accelerate: thread DetermineAcceleration.impl;
+
+		connections
+			dist_thread_conn: port front_distance -> thread_distance.distance_in;
+			current_speed_thread_conn: port current_speed -> thread_current_speed.current_speed_in;
+			set_speed_thread_conn: port set_speed -> thread_set_speed.set_speed_in;
+			dist_acc_conn: port thread_distance.distance_out -> thread_accelerate.distance_in;
+			curr_speed_acc_conn: port thread_current_speed.current_speed_out -> thread_accelerate.current_speed_in;
+			set_speed_acc_conn: port thread_set_speed.set_speed_out -> thread_accelerate.set_speed_in;
+			acc_gas_conn: port thread_accelerate.gas_out -> press_gas;
+			acc_brake_conn: port thread_accelerate.brake_out -> press_brake;
+	end Controller.impl;
+
+-- Threads
+	thread ReadDistance
+		features
+			distance_in: in data port Distance.meters;
+			distance_out: out data port Distance.meters;
+		properties
+			SEI::MIPSBudget => 15.0 mips;
+	end ReadDistance;
+
+	thread implementation ReadDistance.impl
+
+	end ReadDistance.impl;
+
+	thread ReadCurrentSpeed
+		features
+			current_speed_in: in data port Speed.kph;
+			current_speed_out: out data port Speed.kph;
+		properties
+			SEI::MIPSBudget => 15.0 mips;
+	end ReadCurrentSpeed;
+
+	thread implementation ReadCurrentSpeed.impl
+
+	end ReadCurrentSpeed.impl;
+
+	thread ReadSetSpeed
+		features
+			set_speed_in: in data port Speed.kph;
+			set_speed_out: out data port Speed.kph;
+		properties
+			SEI::MIPSBudget => 10.0 mips;
+	end ReadSetSpeed;
+
+	thread implementation ReadSetSpeed.impl
+
+	end ReadSetSpeed.impl;
+
+	thread DetermineAcceleration
+		features
+			distance_in: in data port Distance.meters;
+			current_speed_in: in data port Speed.kph;
+			set_speed_in: in data port Speed.kph;
+			gas_out: out event port;
+			brake_out: out event port;
+		properties
+			SEI::MIPSBudget => 50.0 mips;
+	end DetermineAcceleration;
+
+	thread implementation DetermineAcceleration.impl
+
+	end DetermineAcceleration.impl;
+
+-- Processor
+	processor MainProcessor
+		features
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::MIPSCapacity => 200.0 mips;
+			SEI::GrossWeight => 0.05kg;
+	end MainProcessor;
+
+	processor implementation MainProcessor.impl
+		subcomponents
+			ram: memory RAM;
+	end MainProcessor.impl;
+
+-- Memory
+	memory RAM
+		features
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.05kg;
+	end RAM;
+	
+	memory implementation RAM.impl
+	end RAM.impl;
+
+-- Bus
+	bus HWConnection
+		properties
+			SEI::GrossWeight => 0.1kg;
+	end HWConnection;
+
+	bus implementation HWConnection.impl
+	end HWConnection.impl;
+
+-- Devices
+-- Distance Sensor
+	device DistanceSensor
+		features
+			front_distance: out data port Distance.meters;
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.05kg;
+	end DistanceSensor;
+
+	device implementation DistanceSensor.impl
+	end DistanceSensor.impl;
+
+	-- Speed Sensor
+	device SpeedSensor
+		features
+			current_speed: out data port Speed.kph;
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.05kg;
+	end SpeedSensor;
+
+	device implementation SpeedSensor.impl
+	end SpeedSensor.impl;
+
+	-- Interface
+	device Interface
+		features
+			set_speed: out data port Speed.kph;
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.1kg;
+	end Interface;
+
+	device implementation Interface.impl
+	end Interface.impl;
+
+	-- Gas
+	device GasPedal
+		features
+			activate_gas: in event port;
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.3kg;
+	end GasPedal;
+
+	device implementation GasPedal.impl
+	end GasPedal.impl;
+
+	-- Brake
+	device BrakePedal
+		features
+			activate_break: in event port;
+			bus_access: requires bus access HWConnection;
+		properties
+			SEI::GrossWeight => 0.3kg;
+	end BrakePedal;
+
+	device implementation BrakePedal.impl
+	end BrakePedal.impl;
+
+
+end tempomat;

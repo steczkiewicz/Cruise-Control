@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="70eb9b9b-61c0-4de4-9b7a-0d9b0559c679" manual="true">
+    <element uuid="877e520d-db76-43ed-a631-23c6b7efb1d5" manual="true">
+      <element uuid="1d4f201d-3301-46c1-8bee-fa97150256ad" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>brake_out</seg>
+        </bo>
+        <position x="317.502628326416" y="93.33333333333334"/>
+      </element>
+      <element uuid="325826a9-0891-41bd-a508-b29aed2ea491" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>current_speed_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="2e3f1444-1467-4759-88f3-9e5526886638" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>distance_in</seg>
+        </bo>
+        <position y="60.0"/>
+      </element>
+      <element uuid="4772d622-4495-43e5-848d-bd9ad3719f46" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>gas_out</seg>
+        </bo>
+        <position x="329.358097076416" y="26.666666666666668"/>
+      </element>
+      <element uuid="0c5302e8-3a2a-4aa7-a5de-f203f65fc05f" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>set_speed_in</seg>
+        </bo>
+        <position y="110.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thread_accelerate</seg>
+      </bo>
+      <position x="742.5677261352539" y="68.0"/>
+      <size width="388.8060073852539" height="160.0"/>
+    </element>
+    <element uuid="2b8f6d26-497e-40c3-96c7-e16d61d6baf1" manual="true">
+      <element uuid="fb2b6f1e-74d3-45b4-aa5c-ce86cb0fcf97" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>current_speed_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="6a63319d-e1df-420b-abbf-119c03dac1f5" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>current_speed_out</seg>
+        </bo>
+        <position x="305.6536636352539" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thread_current_speed</seg>
+      </bo>
+      <position x="293.72264862060547" y="38.0"/>
+      <size width="428.84507751464844" height="60.0"/>
+    </element>
+    <element uuid="091efc5f-07e9-4827-b6d6-a72d763c486e" manual="true">
+      <element uuid="98e38f32-a6a8-43af-b8ea-2e0e1966880e" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>distance_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="78ed5c26-edab-46be-9f68-b56cde369a9f" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>distance_out</seg>
+        </bo>
+        <position x="234.4947967529297" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thread_distance</seg>
+      </bo>
+      <position x="347.091796875" y="118.0"/>
+      <size width="322.1067810058594" height="60.0"/>
+    </element>
+    <element uuid="7a908594-5a9b-4e33-957c-1a8fdd3c6ec5" manual="true">
+      <element uuid="58a337e5-42a6-479a-bfe8-086ee64b7956" manual="true" dockArea="left">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>set_speed_in</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="0a9ea868-3552-40d1-aacb-39e3e99a54fc" manual="true" dockArea="right">
+        <bo>
+          <seg>org.osate.ge.diagrams.instance</seg>
+          <seg>feature_instance</seg>
+          <seg>set_speed_out</seg>
+        </bo>
+        <position x="258.2317810058594" y="10.0"/>
+      </element>
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>component_instance</seg>
+        <seg>thread_set_speed</seg>
+      </bo>
+      <position x="329.28905868530273" y="198.0"/>
+      <size width="357.7122573852539" height="60.0"/>
+    </element>
+    <element uuid="4fd98b20-c860-4053-b22d-bb6069c731eb" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>acc_brake_conn : Controller_impl_Instance.thread_accelerate.brake_out -> Controller_impl_Instance.press_brake</seg>
+      </bo>
+    </element>
+    <element uuid="a51265de-0e20-45de-b5e6-ceafdf7ef44c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>acc_gas_conn : Controller_impl_Instance.thread_accelerate.gas_out -> Controller_impl_Instance.press_gas</seg>
+      </bo>
+    </element>
+    <element uuid="482bcecf-950d-4a93-9e30-17c14b24d7d6" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>curr_speed_acc_conn : Controller_impl_Instance.thread_current_speed.current_speed_out -> Controller_impl_Instance.thread_accelerate.current_speed_in</seg>
+      </bo>
+      <bendpoints>
+        <point x="732.5677490234375" y="80.0"/>
+        <point x="732.5677490234375" y="110.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="b159a6d5-b7be-46b0-9265-8a9db3ff2565" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>current_speed_thread_conn : Controller_impl_Instance.current_speed -> Controller_impl_Instance.thread_current_speed.current_speed_in</seg>
+      </bo>
+    </element>
+    <element uuid="ab7067af-3efd-4cbc-a566-ca43563664f0" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>dist_acc_conn : Controller_impl_Instance.thread_distance.distance_out -> Controller_impl_Instance.thread_accelerate.distance_in</seg>
+      </bo>
+    </element>
+    <element uuid="4498c16a-cf78-4fc4-9bbc-f4eaf4047528" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>dist_thread_conn : Controller_impl_Instance.front_distance -> Controller_impl_Instance.thread_distance.distance_in</seg>
+      </bo>
+    </element>
+    <element uuid="95243811-0004-48a8-8bef-fbdd0620e41c" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>set_speed_acc_conn : Controller_impl_Instance.thread_set_speed.set_speed_out -> Controller_impl_Instance.thread_accelerate.set_speed_in</seg>
+      </bo>
+      <bendpoints>
+        <point x="732.5676879882812" y="240.0"/>
+        <point x="732.5676879882812" y="210.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="b377bd49-a0de-4ce9-94e5-6233fa97a46d" manual="true">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>connection_reference</seg>
+        <seg>set_speed_thread_conn : Controller_impl_Instance.set_speed -> Controller_impl_Instance.thread_set_speed.set_speed_in</seg>
+      </bo>
+    </element>
+    <element uuid="99235698-5908-4570-ae64-9030ca262009" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>current_speed</seg>
+      </bo>
+      <position y="48.0"/>
+    </element>
+    <element uuid="c2c386a2-fa54-4028-bfe2-3f8aef9fec3d" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>front_distance</seg>
+      </bo>
+      <position y="128.0"/>
+    </element>
+    <element uuid="65233586-438b-46a5-884b-8bef70e80d5d" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>press_brake</seg>
+      </bo>
+      <position x="1240.6146240234375" y="161.33333333333334"/>
+    </element>
+    <element uuid="e7292c6b-30e7-4780-b189-2bcd2ab6aa15" manual="true" dockArea="right">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>press_gas</seg>
+      </bo>
+      <position x="1252.4700927734375" y="94.66666666666667"/>
+    </element>
+    <element uuid="0e1da73d-588a-4e51-9f35-a46ddd3f876f" manual="true" dockArea="left">
+      <bo>
+        <seg>org.osate.ge.diagrams.instance</seg>
+        <seg>feature_instance</seg>
+        <seg>set_speed</seg>
+      </bo>
+      <position y="208.0"/>
+    </element>
+    <bo>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/tempomat/instances/tempomat_controller_impl_instance.aaxl2</seg>
+    </bo>
+    <position/>
+    <size width="1325.9870147705078" height="270.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>org.osate.ge.diagrams.instance</seg>
+      <seg>system_instance</seg>
+      <seg>/tempomat/instances/tempomat_controller_impl_instance.aaxl2</seg>
+    </context>
+  </config>
+</diagram:Diagram>
