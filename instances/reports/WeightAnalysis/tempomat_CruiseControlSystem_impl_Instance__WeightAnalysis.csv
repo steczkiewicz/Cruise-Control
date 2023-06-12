@@ -1,0 +1,12 @@
+Weight totals Report
+
+HWConnection: [L] Sum of weights / gross weight is 0,100 kg (no limit specified)
+DistanceSensor: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+SpeedSensor: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+Interface: [L] Sum of weights / gross weight is 0,100 kg (no limit specified)
+GasPedal: [L] Sum of weights / gross weight is 0,300 kg (no limit specified)
+BrakePedal: [L] Sum of weights / gross weight is 0,300 kg (no limit specified)
+RAM: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+ram: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+MainProcessor: [L] Sum of weights / gross weight is 0,050 kg (no limit specified)
+CruiseControlSystem_impl_Instance: [L] Sum of weights / gross weight is 1,000 kg (no limit specified)
