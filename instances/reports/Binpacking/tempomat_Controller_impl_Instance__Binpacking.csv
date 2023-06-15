@@ -1,0 +1,22 @@
+Bind threads to processors Report
+
+Binpacker Analysis Report
+
+Warning! Thread thread_distance is missing period property. Using default of 1 ns
+Warning! Thread thread_current_speed is missing period property. Using default of 1 ns
+Warning! Thread thread_set_speed is missing period property. Using default of 1 ns
+Warning! Thread thread_accelerate is missing period property. Using default of 1 ns
+Warning! Thread thread_distance is missing compute_execution_time or InstructionsPerDispatch property. Using default of 0 ns
+Warning! Thread thread_current_speed is missing compute_execution_time or InstructionsPerDispatch property. Using default of 0 ns
+Warning! Thread thread_set_speed is missing compute_execution_time or InstructionsPerDispatch property. Using default of 0 ns
+Warning! Thread thread_accelerate is missing compute_execution_time or InstructionsPerDispatch property. Using default of 0 ns
+Warning! Data size of connection source port front_distance not specified
+Warning! Data size of connection source port current_speed not specified
+Warning! Data size of connection source port set_speed not specified
+Warning! Data size of connection source port thread_distance.distance_out not specified
+Warning! Data size of connection source port thread_current_speed.current_speed_out not specified
+Warning! Data size of connection source port thread_set_speed.set_speed_out not specified
+
+Binpacking results: FAILED
+
+Thread to Processor Bindings

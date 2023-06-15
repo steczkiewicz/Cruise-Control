@@ -4,7 +4,7 @@
     <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
       <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSCapacity"/>
       <ownedValue>
-        <ownedValue xsi:type="aadl2:RealLiteral" value="144.4">
+        <ownedValue xsi:type="aadl2:RealLiteral" value="200.0">
           <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.4/@ownedLiteral.1"/>
         </ownedValue>
       </ownedValue>

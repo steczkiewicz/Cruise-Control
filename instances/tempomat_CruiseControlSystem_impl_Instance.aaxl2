@@ -161,6 +161,15 @@
     </componentInstance>
     <componentInstance name="Controller" category="process">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.8"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:RealLiteral" value="100.0">
@@ -213,6 +222,15 @@
       </featureInstance>
       <componentInstance name="thread_distance" category="thread">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:ListValue">
+              <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.8"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
           <ownedValue>
             <ownedValue xsi:type="aadl2:RealLiteral" value="15.0">
@@ -250,6 +268,15 @@
         <classifier xsi:type="aadl2:ThreadImplementation" href="../tempomat.aadl#tempomat.ReadDistance.impl"/>
       </componentInstance>
       <componentInstance name="thread_current_speed" category="thread">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:ListValue">
+              <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.8"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
           <ownedValue>
@@ -289,6 +316,15 @@
       </componentInstance>
       <componentInstance name="thread_set_speed" category="thread">
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:ListValue">
+              <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.8"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
           <ownedValue>
             <ownedValue xsi:type="aadl2:RealLiteral" value="10.0">
@@ -326,6 +362,15 @@
         <classifier xsi:type="aadl2:ThreadImplementation" href="../tempomat.aadl#tempomat.ReadSetSpeed.impl"/>
       </componentInstance>
       <componentInstance name="thread_accelerate" category="thread">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Processor_Binding"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:ListValue">
+              <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.8"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
         <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
           <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSBudget"/>
           <ownedValue>
@@ -413,7 +458,7 @@
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
         <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#SEI.MIPSCapacity"/>
         <ownedValue>
-          <ownedValue xsi:type="aadl2:RealLiteral" value="144.4">
+          <ownedValue xsi:type="aadl2:RealLiteral" value="200.0">
             <unit href="platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl#/0/@ownedPropertyType.4/@ownedLiteral.1"/>
           </ownedValue>
         </ownedValue>
@@ -444,36 +489,99 @@
       <classifier xsi:type="aadl2:ProcessorImplementation" href="../tempomat.aadl#tempomat.MainProcessor.impl"/>
     </componentInstance>
     <connectionInstance name="HWConnection -> DistanceSensor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.1/@featureInstance.1" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.1"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.1/@featureInstance.1">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.0"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> SpeedSensor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.2/@featureInstance.1" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.2"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.2/@featureInstance.1">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.1"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> Interface.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.3/@featureInstance.1" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.3"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.3/@featureInstance.1">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.2"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> GasPedal.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.4/@featureInstance.1" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.4"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.4/@featureInstance.1">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.3"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> BrakePedal.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.5/@featureInstance.1" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.5"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.5/@featureInstance.1">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.4"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> RAM.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.6/@featureInstance.0" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.6"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.6/@featureInstance.0">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.5"/>
       </connectionReference>
     </connectionInstance>
     <connectionInstance name="HWConnection -> MainProcessor.bus_access" complete="true" kind="accessConnection" destination="/0/@componentInstance.8/@featureInstance.0" source="/0/@componentInstance.0">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Deployment_Properties.aadl#Deployment_Properties.Actual_Connection_Binding"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:ListValue">
+            <ownedListElement xsi:type="instance:InstanceReferenceValue" referencedInstanceObject="/0/@componentInstance.0"/>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.7"/>
+      </ownedPropertyAssociation>
       <connectionReference context="/0" source="/0/@componentInstance.0" destination="/0/@componentInstance.8/@featureInstance.0">
         <connection xsi:type="aadl2:AccessConnection" href="../tempomat.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedAccessConnection.6"/>
       </connectionReference>

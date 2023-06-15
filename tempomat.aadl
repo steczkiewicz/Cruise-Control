@@ -32,6 +32,7 @@ public
 			HWConnection: bus HWConnection.impl;
 			MainProcessor: processor MainProcessor.impl;
 			RAM: memory RAM.impl;
+			
 		connections
 			distance_sensor_connection: port DistanceSensor.front_distance -> Controller.front_distance;
 			speed_sensor_connection: port SpeedSensor.current_speed -> Controller.current_speed;
@@ -46,6 +47,17 @@ public
 			bus_brake: bus access HWConnection -> BrakePedal.bus_access;
 			bus_memory: bus access HWConnection -> RAM.bus_access;
 			bus_processor: bus access HWConnection -> MainProcessor.bus_access;
+			
+		properties
+            Actual_Processor_Binding => (reference(MainProcessor)) applies to Controller;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_distance_sensor;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_speed_sensor;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_interface;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_gas;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_brake;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_memory;
+            Actual_Connection_Binding => (reference(HWConnection)) applies to bus_processor;
+
 	end CruiseControlSystem.impl;
 
 -- Process

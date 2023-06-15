@@ -1,0 +1,23 @@
+Not Bound Resource Budget Analysis Report
+
+Resource Summary: 
+**   System Controller_impl_Instance budgets over capacity: MIPS capacity 0,000 MIPS : MIPS budget 90,000 MIPS
+  0 out of 0 with MIPS capacity
+  4 out of 4 with MIPS budget
+
+
+
+Detailed Processor MIPS Capacity Report 
+
+Component,Capacity
+Total, 0,000 MIPS,
+
+
+Detailed MIPS Budget Report 
+
+Component,Budget,Actual,Notes
+thread thread_distance, 15,000 MIPS,0,000 MIPS,thread Controller_impl_Instance.thread_distance total 0,000 MIPS below budget 15,000 MIPS (100,0 % slack)
+thread thread_current_speed, 15,000 MIPS,0,000 MIPS,thread Controller_impl_Instance.thread_current_speed total 0,000 MIPS below budget 15,000 MIPS (100,0 % slack)
+thread thread_set_speed, 10,000 MIPS,0,000 MIPS,thread Controller_impl_Instance.thread_set_speed total 0,000 MIPS below budget 10,000 MIPS (100,0 % slack)
+thread thread_accelerate, 50,000 MIPS,0,000 MIPS,thread Controller_impl_Instance.thread_accelerate total 0,000 MIPS below budget 50,000 MIPS (100,0 % slack)
+Total, ,90,000 MIPS,
